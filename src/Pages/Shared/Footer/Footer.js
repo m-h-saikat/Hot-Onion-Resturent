@@ -3,6 +3,7 @@ import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import Logo from '../../../Image/logo.png'
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
@@ -15,33 +16,23 @@ const Footer = () => {
 
               </div>
             </div>
+<div className="col-md-4">
 
-            <div className="col-md-6">
-              <div className="right-footer-container">
-                <h3>Sign up for the newsletter</h3>
-                <input
-                  className="footer-input"
-                  type="text"
-                  placeholder="Enter Your Email"
-                />
-                <button className="btn">Subscribe</button>
-                <div className="phone d-flex align-items-center justify-content-center mt-4">
-                  <div>
-                    <h5>
-                      <FontAwesomeIcon icon={faPhoneAlt} />
-                      +88 01961-264444
-                    </h5>
-                  </div>
-                </div>
-                <div className="map d-flex align-items-center justify-content-center">
-                  <div>
-                    <p>
-                      <FontAwesomeIcon icon={faMapMarkerAlt} /> 230 Dhaka,
-                      Bangladesh, 1236,
-                    </p>
-                  </div>
-                </div>
-              </div>
+</div>
+            <div className="col-md-4 d-flex float-right">
+             
+             <div>
+             <NavLink to="#"className="NavLink text-white">About Online Food</NavLink> <br />
+             <NavLink to="#"className="NavLink text-white">Read Our Blog</NavLink><br />
+             <NavLink to="#"className="NavLink text-white">Sign Up to Deliver</NavLink><br />
+             <NavLink to="#"className="NavLink text-white">Add Your Resturent</NavLink>      
+             </div>
+             <div >
+             <NavLink to="#"className="NavLink text-white">Get Help  </NavLink>
+             <NavLink to="#"className="NavLink text-white"> Read FAQs </NavLink><br />
+             <NavLink to="#"className="NavLink text-white">View all cities</NavLink><br />
+             <NavLink to="#"className="NavLink text-white">Resturents Near Me</NavLink><br />
+             </div>
             </div>
           </div>
           <p className="p-2">

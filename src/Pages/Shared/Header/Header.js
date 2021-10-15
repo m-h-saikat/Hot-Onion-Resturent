@@ -9,18 +9,19 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 
 const Header = () => {
-    const {LogOut,user}=useAuth();
+    const {user,LogOut}=useAuth();
     return (
-        <div>
+        <div className="header">
           <Navbar>
   <Container>
   <img src={Logo} alt="" width="200" height="50" />
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
-   
-    <NavLink to="/Home" className="NavLink"><FontAwesomeIcon icon={faCartPlus} /></NavLink>
-    <NavLink to="/Login"className="NavLink">Login</NavLink>
-    <NavLink to="/Register"className="NavLink"><button className="btn btn-danger">Sign Up</button></NavLink>
+    <NavLink to="/Home" className="NavLink">Home</NavLink>
+    <NavLink to="/Cart" className="NavLink"><FontAwesomeIcon icon={faCartPlus} /></NavLink>
+    {user.email?(<button onClick={LogOut}  className="btn btn-danger">SignOut</button> ):(<NavLink to="/Login"className="NavLink">Login</NavLink>)
+    }
+   { user.email?(<img className="user-profile-photo" src={user.photo} width="50" height="50"/>) :(<NavLink to="/Register"className="NavLink"><button className="btn btn-danger">Sign Up</button></NavLink>)}
     </Navbar.Collapse>
   </Container>
 </Navbar>

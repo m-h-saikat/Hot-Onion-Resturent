@@ -9,11 +9,12 @@ import './App.css';
 import AuthProvider from "./Context/AuthProvider";
 import Cart from "./Pages/Cart/Cart";
 import Breakfast from "./Pages/Home/FoodItem/BreakFast/Breakfast";
-import Dinner from "./Pages/Home/FoodItem/Dinner/Dinner";
+import Dinner from "./Pages/Home/FoodItem/Lunch/Dinner";
 import Lunch from "./Pages/Home/FoodItem/Lunch/Lunch";
 import Home from "./Pages/Home/Home";
 import WhyUChooseUS from "./Pages/Home/WhyUChooseUS/WhyUChooseUS";
 import Login from "./Pages/Login/Login/Login";
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Register from "./Pages/Login/Register/Register";
 import NotFound from "./Pages/Not Found/NotFound";
 import Footer from "./Pages/Shared/Footer/Footer";
@@ -32,9 +33,9 @@ function App() {
          <Route path ="/Home"> 
          <Home></Home>
          </Route>
-         <Route path ="/Cart"> 
+         <PrivateRoute path ="/Cart"> 
        <Cart></Cart>
-         </Route>
+         </PrivateRoute>
          <Route path ="/Breakfast"> 
          <Breakfast></Breakfast>
          </Route>

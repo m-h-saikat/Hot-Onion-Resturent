@@ -3,7 +3,11 @@
     margin-right: 20px;
     font-size:1.2em;
 }
-.NavLink .btn{
+.header .btn{
     border-radius: 30px!important;
     padding: 5px 20px;
+}
+.user-profile-photo{
+    border-radius:50px;
+    margin-left: 10px;
 }
