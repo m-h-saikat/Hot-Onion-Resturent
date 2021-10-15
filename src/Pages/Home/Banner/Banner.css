@@ -1,0 +1,9 @@
+.banner-serction{
+    background-image: url("../../../Image/bannerbackground.png");
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+padding: 150px;
+    height: 400px;
+}
+

@@ -1,0 +1,9 @@
+.NavLink{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size:1.2em;
+}
+.NavLink .btn{
+    border-radius: 30px!important;
+    padding: 5px 20px;
+}
