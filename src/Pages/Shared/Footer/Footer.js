@@ -21,17 +21,17 @@ const Footer = () => {
 </div>
             <div className="col-md-4 d-flex float-right">
              
-             <div>
+             <div className="me-5">
              <NavLink to="#"className="NavLink text-white">About Online Food</NavLink> <br />
              <NavLink to="#"className="NavLink text-white">Read Our Blog</NavLink><br />
              <NavLink to="#"className="NavLink text-white">Sign Up to Deliver</NavLink><br />
              <NavLink to="#"className="NavLink text-white">Add Your Resturent</NavLink>      
              </div>
-             <div >
-             <NavLink to="#"className="NavLink text-white">Get Help  </NavLink>
+             <div className="ms-3">
+             <NavLink to="#"className="NavLink text-white">Get Help  </NavLink><br />
              <NavLink to="#"className="NavLink text-white"> Read FAQs </NavLink><br />
              <NavLink to="#"className="NavLink text-white">View all cities</NavLink><br />
-             <NavLink to="#"className="NavLink text-white">Resturents Near Me</NavLink><br />
+             
              </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ import './App.css';
 import AuthProvider from "./Context/AuthProvider";
 import Cart from "./Pages/Cart/Cart";
 import Breakfast from "./Pages/Home/FoodItem/BreakFast/Breakfast";
-import Dinner from "./Pages/Home/FoodItem/Lunch/Dinner";
+import Dinner from "./Pages/Home/FoodItem/Dinner/Dinner";
 import Lunch from "./Pages/Home/FoodItem/Lunch/Lunch";
 import Home from "./Pages/Home/Home";
 import WhyUChooseUS from "./Pages/Home/WhyUChooseUS/WhyUChooseUS";

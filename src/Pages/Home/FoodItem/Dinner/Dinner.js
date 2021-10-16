@@ -1,13 +1,20 @@
-import React from 'react';
-import useFood from '../../../../Hooks/useFood';
 
-const Lunch = () => {
-    const {foods}=useFood();
-    const Lunch=foods?.filter(p=>p.type==='Food-Lunch');
+import{ useEffect, useState } from 'react';
+import { Nav, Navbar, Tab,Tabs } from 'react-bootstrap';
+import { Link, NavLink } from 'react-router-dom';
+import useFood from '../../../../Hooks/useFood';
+import Breakfast from '../BreakFast/Breakfast';
+import Lunch from '../Lunch/Lunch';
+
+const Dinner = () => {
+ const {foods}=useFood();
+ const Dinner=foods?.filter(p=>p.type==='Food-Dinner');
+
     return (
         <div>
-           <div className="row row-cols-1 row-cols-md-3 g-4 container mx-auto ">
-{Lunch.map((food) => (
+
+<div className="row row-cols-1 row-cols-md-3 g-4 container mx-auto ">
+{Dinner.map((food) => (
   <div className="col" key={food.key}>
     <div className="card h-60 shadow p-3 mb-5 mt-5 bg-white rounded">
       <img
@@ -31,8 +38,15 @@ const Lunch = () => {
   </div>
 ))}
 </div> 
-        </div>
+
+     
+      </div>
+   
     );
 };
 
-export default Lunch;
+export default Dinner;
+
+
+
+
